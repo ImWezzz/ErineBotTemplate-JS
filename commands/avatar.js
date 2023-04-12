@@ -5,13 +5,13 @@ const body = {
    data: new HybridBuilder()
    .setName('avatar')
    .setAliases('pfp')
-   .setDescription('Muestra el avatar de un usuario'),
+   .setDescription('Display a user avatar'),
   params: new ParamsBuilder()
-  .addMember({ name: "user", description: "Usuario", required: false }),
+  .addMember({ name: "user", description: "Select a user", required: false }),
   async code(ctx) {
     const u = ctx.get("user")?.user || ctx.author
     const embed = new EmbedBuilder()
-      .setDescription(`Avatar de: ${u.username}`)
+      .setDescription(`${u.username}'s avatar`)
       .setImage(u.displayAvatarURL({ size: 1024 }))
       .setColor('dcdcdc')
   await ctx.send({ embeds: [embed] })
