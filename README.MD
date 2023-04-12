@@ -33,13 +33,13 @@ const client = new ErineClient({
 
 client.login('TOKEN');
 ```
-Check the [documentation](http://erine.munlai.fun) for more information.
+Check the [documentation](http://erine.cyberghxst.ga/) for more information.
 
 # Disclaimer
 Erine is not affiliated or associated with Discord, Discord.js development or any other services.
 
 # Links
-- [Documentation](https://erine.munlai.fun)
+- [Documentation](https://erine.cyberghxst.ga/)
 - [Support Server](https://discord.com/invite/PG7EFJQFWM)
 
 # 🌙 Made by Moonlight Group members.
