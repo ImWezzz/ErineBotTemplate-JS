@@ -8,7 +8,7 @@ const event = {
   async code(error) {
       if(error instanceof Errors.CommandNotFound) return
       else if(error instanceof Errors.MissingRequiredParam) {
-          return error.ctx.send(`Parametro **${error.param.name}** faltante!`)
+          return error.ctx.send(`Missing parameters: **${error.param.name}**`)
   }
 }
 
