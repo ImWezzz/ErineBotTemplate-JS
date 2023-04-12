@@ -3,11 +3,11 @@ const { HybridBuilder, ParamsBuilder } = require("erine");
 const body = {
     data: new HybridBuilder()
     .setName('say')
-    .setDescription('Repito tu texto'),
+    .setDescription('I repeat your text'),
     params: new ParamsBuilder()
-    .addString({ name: "texto", description: "Ingresa tu text", required: true, long: true }),
+    .addString({ name: "text", description: "Insert a text", required: true, long: true }),
     async code(ctx) {
-       await ctx.send(ctx.get("texto"));
+       await ctx.send(ctx.get("text"));
     }
 }
 
