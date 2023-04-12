@@ -4,9 +4,9 @@ const body = {
     data: new HybridBuilder()
     .setName("ping")
     .setAliases("latency")
-    .setDescription("Muestra mi ping"),
+    .setDescription("Show my ping"),
     async code(ctx) {
-        ctx.send(`Mi ping es de: ${ctx.bot.ws.ping}ms`)
+        ctx.send(`Ping: ${ctx.bot.ws.ping}ms`)
     }
 }
 
